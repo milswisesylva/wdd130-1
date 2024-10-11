@@ -1,92 +1,118 @@
-.changa-uniquifier> {
-    font-family: "Changa", system-ui;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-  }
-
-  .cabin-uniquifier> {
-    font-family: "Cabin", system-ui;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-
-:root {
-    --primary-color: #397367;
-    --secindary-color: #13293D;
-    accent-color: #E3B23C;
-    accent-color: #ED6A5A;
-}
-
-head {
-    font-family: "Changa", system-ui;
-    color: orange;
-}
-
-header {
-    font-family: "Cabin", system-ui;
-    color: blue;
-}
-
-a {
-    text-decoration: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    max-width: 1000px;
-    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: steelblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #212e3fc0;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    background-color: #cac7ee;;
     padding: 20px;
 }
 
-div {
-    position: block;
+.hero-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 }
 
-h1 {
-    position: block;
-    top: auto;
+.hero-content img {
+    width: 100px;
+    height: 100px;
 }
 
-article {
-    position: absolute;
-    top: auto;
+.history {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
 }
 
-div.hero {
-    background-color: #37677a;
-    position: relative;
-    height: fit-content;
+.history-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-.hero > img {
-    display: inline;
-    width: 100%;
-    height: auto;
+.history-content img {
+    width: 450px;
+    height: 120px;
+    background-color: #d4c7f4;
 }
 
-.hero > article {
-    position: absolute;
-    color: #ffffff;
+.adventure {
+    background-color: #cac7ee;
+    padding: 30px;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    background-color: steelblue;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
     bottom: 0;
-    font-size: 100%;
-    font-family: Changa;
-    background-color: #13293d86;
-}
-
-.hero > h1 {
-    position: absolute;
     width: 100%;
-    top: 0;
-    text-align:center;
-    color:beige;
-    background:blank;
 }
 
-.hero > article > img {
-    float: right;
-    width: 10%;
-    height: auto;
+footer p {
+    margin-right: 20px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.footer-icons img {
+    width: 20px;
+    margin-left: 10px;
 }
